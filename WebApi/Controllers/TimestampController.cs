@@ -24,6 +24,10 @@ namespace WebApi.Controllers
                 .Where(p => p.DateFrom.Month == Convert.ToInt32(month))
                 .ToList();
 
+            var asd = _dummyDataService.GetDummyTimestamps()
+                .Where(p => p.DateFrom.Month == Convert.ToInt32(month))
+                .ToList();
+
             return dummyTimestamps;
         }
 
