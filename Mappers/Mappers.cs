@@ -27,6 +27,15 @@ namespace Mappers
             });
         }
 
+        public static List<Tax> ToTaxesContracts(this IEnumerable<Txt> databaseTax)
+        {
+            return databaseTax.ToList().ConvertAll(x => new Tax
+            {
+                Description = x.Txt1,
+                Id = x.TxtNo
+            });
+        }
+
         public static List<Activity> ToContracts(this IEnumerable<Prod> dataBaseActivities)
         {
             return dataBaseActivities.ToList().ConvertAll(x => new Activity
@@ -69,12 +78,7 @@ namespace Mappers
             return dataBaseCustomer.ToList().ConvertAll(x => new Customer
             {
                 CustomerId = x.CustNo,
-                Adress = x.Ad1,
-                City = x.PArea,
-                Email = x.MailAd,
-                Name = x.Nm,
-                PhoneNumber = x.Phone,
-                PostalCode = x.PNo,
+                Name = x.Nm
             });
         }
 
@@ -140,13 +144,8 @@ namespace Mappers
 
             return new Customer
             {
-                CustomerId = dataBaseCustomer.CustNo,
-                Adress = dataBaseCustomer.Ad1,
-                City = dataBaseCustomer.PArea,
-                Email = dataBaseCustomer.MailAd,
-                Name = dataBaseCustomer.Nm,
-                PhoneNumber = dataBaseCustomer.Phone,
-                PostalCode = dataBaseCustomer.PNo,
+                CustomerId = dataBaseCustomer.ActNo,
+                Name = dataBaseCustomer.Nm
             };
         }
 

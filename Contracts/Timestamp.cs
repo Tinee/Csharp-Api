@@ -11,15 +11,13 @@ namespace Contracts
 
         public string InternDescription { get; set; }
 
-        public int Tax { get; set; }
+        public Tax Tax { get; set; }
 
         public bool Wage { get; set; }
 
         public bool IsDebiting { get; set; }
 
         public bool DefaultActivity { get; set; }
-
-        public bool OutLay { get; set; }
 
         public Order Order { get; set; }
 
@@ -45,7 +43,7 @@ namespace Contracts
 
         public decimal TotalTimeSpend { get; set; }
 
-        public WorkText WorkText { get; set; }
+        public WorkText Occupation { get; set; }
         public decimal InvoicedTime { get; set; }
 
     }

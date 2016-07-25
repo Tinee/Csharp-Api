@@ -16,11 +16,9 @@ namespace Dummy_Data
                 Id = 1,
                 Description = "Hejsan",
                 InternDescription = "Hallå Interndescription",
-                Tax = 1,
                 Wage = true,
                 IsDebiting = true,
                 DefaultActivity = true,
-                OutLay = true,
                 Order = new Order
                 {
 
@@ -58,7 +56,7 @@ namespace Dummy_Data
                 },
                 DateFrom = new DateTime(2016, 04, 25),
                 DateTo = new DateTime(2016, 04, 25),
-                WorkText = new WorkText
+                Occupation = new WorkText
                 {
                     Id = 1,
                     GroupId = 48,
@@ -71,11 +69,11 @@ namespace Dummy_Data
                 Id = 1,
                 Description = "Awesome",
                 InternDescription = "Hallå där interntext",
-                Tax = 1,
+                //Tax = 1,
                 Wage = true,
                 IsDebiting = true,
                 DefaultActivity = true,
-                OutLay = true,
+                //OutLay = true,
                 Order = new Order
                 {
 
@@ -114,7 +112,7 @@ namespace Dummy_Data
                 },
                 DateFrom = new DateTime(2015, 03, 24),
                 DateTo = new DateTime(2015, 03, 24),
-                WorkText = new WorkText
+                Occupation = new WorkText
                 {
                     Id = 2,
                     GroupId = 48,

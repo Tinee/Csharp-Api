@@ -71,6 +71,7 @@
     <Compile Include="Handlers\ActiveDirectoryHandler.cs" />
     <Compile Include="Handlers\DateHandler.cs" />
     <Compile Include="Handlers\InsertTimestampHandler.cs" />
+    <Compile Include="Handlers\TimestampAutoCompleteHandler.cs" />
     <Compile Include="Helpers\ClockHelper.cs" />
     <Compile Include="Helpers\BooleanHelper.cs" />
     <Compile Include="Helpers\DateHelper.cs" />

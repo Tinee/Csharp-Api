@@ -50,7 +50,12 @@ namespace WebApi.Controllers
             //Fix parameter on OldDbHandler
             var oldDbHandler = new InsertTimestampHandler("marcar");
 
-            oldDbHandler.Insert(100359, 15, 2000, false, "010", false, 0, 1, 1, false, "Test Semester", "Test Description2", true, 20160609, 20160609,1400,1500,"","","Interna möten",0);
+            //oldDbHandler.Insert(100359, 15, 2000, false, "010", false, 0, 1, 1, false, "Test Semester", "Test Description2", true, 20160609, 20160609,1400,1500,"","","Interna möten",0);
+
+            //faktid samma som worked
+
+            oldDbHandler.Insert(timeStamp.Customer.CustomerId, 15, timeStamp.Agreement.ContractId, false, timeStamp.Activity.Id, timeStamp.IsDebiting, timeStamp.Agreement.Id, 1, 1, false, "Test Semester", "Test Description2", true, 20160609, 20160609,1400,1500,"","","Interna möten",Convert.ToInt32(timeStamp.Tax.Id));
+
 
             return Ok();
         }

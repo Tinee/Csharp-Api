@@ -70,9 +70,9 @@ namespace Business_Logic.Data_Manipulations.Database_Entites
                 //This is insane, but the database is wierd, get use to it :)
                 IsDebiting = item.ProdPrGr.ReverseBoolean(),
                 Wage = Convert.ToBoolean(item.AdWage1),
-                OutLay = Convert.ToBoolean(item.ProdPrG2),
+                //OutLay = Convert.ToBoolean(item.ProdPrG2),
                 InvoicedTime = item.NoInvoAb.MinutesToHours(),
-                WorkText = workTexts.FirstOrDefault(x => x.Id == item.ProdPrG3),
+                Occupation = workTexts.FirstOrDefault(x => x.Id == item.ProdPrG3),
                 Customer = _customerHandler.Get(item.CustNo)
             }));
 

@@ -7,7 +7,7 @@ using System.Web.Http.Cors;
 
 namespace WebApi
 {
-    public class WebApiConfig
+    public class WebApiConfig 
     {
         public static void Configure(IAppBuilder app)
         {

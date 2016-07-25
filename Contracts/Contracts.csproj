@@ -44,6 +44,8 @@
     <Compile Include="Order.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="Service.cs" />
+    <Compile Include="Tax.cs" />
+    <Compile Include="TimestampingViewModel.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Office.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
